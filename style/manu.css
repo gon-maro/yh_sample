@@ -1,0 +1,134 @@
+.wrap-manu > .oc-manu , .stickyed > .oc-manu{
+    width: 50px;
+    max-width: 1200px;
+    height: 50px;
+    margin: auto 0 auto 0;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+
+.oc-manu-content{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: 50;
+    display: none;
+}
+.oc-manu-content-opened{
+    display: block;
+}
+.oc-manu-content-closing{
+    display: block;
+}
+.out-oc-manu-content{
+    background-color: #00000048;
+    width: calc(100%);
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.oc-manu-content-opened > .out-oc-manu-content{
+    animation: 400ms both out-oc-manu-fadein;
+}
+@keyframes out-oc-manu-fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.oc-manu-content-closing > .out-oc-manu-content{
+    animation: 400ms both out-oc-manu-fadeout;
+}
+@keyframes out-oc-manu-fadeout{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+.in-oc-manu-content{
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    background-color: var(--theme_color);
+    width: calc(100% - 24px);
+    max-width: 400px;
+    height: calc(100vh - 660px);
+    border-radius: 8px;
+}
+.oc-manu-content-opened > .in-oc-manu-content{
+    animation: 400ms both in-oc-manu-fadein;
+}
+@keyframes in-oc-manu-fadein{
+    0%{
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.oc-manu-content-closing > .in-oc-manu-content{
+    animation: 400ms both in-oc-manu-fadeout;
+}
+@keyframes in-oc-manu-fadeout{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+.wrap-oc-manu-links{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.oc-manu-content-opened > .in-oc-manu-content > .wrap-oc-manu-links{
+    animation: 900ms 140ms both oc-manu-links-fadein;
+    animation-timing-function: cubic-bezier(.06,.51,.02,.99);
+}
+@keyframes oc-manu-links-fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+.wrap-oc-manu-links > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+}
+.oc-manu-link-spacer{
+    height: 12px;
+}

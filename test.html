@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+	<div class="top">
+		<p>スクロール位置：<span id="scroll-amount">0px</span></p>
+	</div>
+	<div id="scroll-box"></div>
+</body>
+
+<style>
+.top{
+	position: fixed;
+	top: 0;
+}
+#scroll-box {
+	height: 5000px;
+}
+</style>
+
+<script>
+	const heder_elem = document.querySelector('.top')
+	$(window).scroll(function() {
+		let scroll = $(this).scrollTop();
+		console.log(scroll)
+		if(scroll > 200){
+			heder_elem.classList.add('stickyed')
+		}
+		else{
+			heder_elem.classList.remove('stickyed')
+		}
+	});
+</script>
+
+</html>
