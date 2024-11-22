@@ -1,5 +1,5 @@
 :root{
-    --theme_color: rgb(85, 185, 189);
+    --theme_color: rgb(91 185 181);
     --black-text: #222222;
 }
 
@@ -17,6 +17,7 @@ html{
 
 
 .load-cover{
+    display: none;
     background-color: #fff;
     width: 100vw;
     height: 100vh;
@@ -341,7 +342,7 @@ html{
 }
 .contact-contents{
     width: 100%;
-    height: 300px;
+    height: 320px;
     background-color: #fff;
     border-radius: 10px;
     transition: 600ms;
@@ -420,14 +421,15 @@ html{
 
 
 .wrap-shop-img{
-    height: 300px;
     position: relative;
     top: 40px;
     left: 20px;
 }
-.shop-img{
-    height: 100%;
-    width: auto;
+.shop-img {
+    height: auto;
+    max-height: 300px;
+    width: calc(100% - 40px);
+    max-width: 450px;
     border-radius: 10px;
 }
 
@@ -467,7 +469,6 @@ html{
 
 
 .footer{
-    width: 100%;
     height: 50px;
     background-color: #222222;
     text-align: center;
