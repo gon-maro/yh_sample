@@ -1,5 +1,5 @@
 :root{
-    --theme_color: rgb(119 182 193);
+    --theme_color: rgb(131 155 173);
     --black-text: #222222;
 }
 
@@ -283,6 +283,9 @@ html{
 .features-content{
     position: relative;
     top: 80px;
+}
+.features-content > h2{
+    text-align: center;
 }
 .features-content > h2::after {
     content: "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　";
