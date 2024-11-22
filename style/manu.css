@@ -31,8 +31,8 @@
     background-color: #00000048;
     width: calc(100%);
     height: 100vh;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .oc-manu-content-opened > .out-oc-manu-content{
     animation: 400ms both out-oc-manu-fadein;
@@ -108,8 +108,8 @@
     left: 20px;
 }
 .oc-manu-content-opened > .in-oc-manu-content > .wrap-oc-manu-links{
-    animation: 900ms 140ms both oc-manu-links-fadein;
-    animation-timing-function: cubic-bezier(.06,.51,.02,.99);
+    animation: 950ms both oc-manu-links-fadein;
+    animation-timing-function: cubic-bezier(.39,0,0,1.01);
 }
 @keyframes oc-manu-links-fadein{
     0%{
