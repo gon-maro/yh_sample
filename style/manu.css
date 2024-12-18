@@ -63,7 +63,7 @@
     position: fixed;
     top: 12px;
     right: 12px;
-    background-color: var(--theme_color);
+    background-color: #ffffffd3;
     width: calc(100% - 24px);
     max-width: 400px;
     height: 255px;
@@ -126,7 +126,7 @@
 
 
 .wrap-oc-manu-links > a{
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 22px;
 }
