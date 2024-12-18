@@ -1,5 +1,5 @@
 :root{
-    --theme_color: rgb(131 155 173);
+    --theme_color: rgba(255, 255, 255, 0);
     --black-text: #222222;
 }
 
@@ -68,10 +68,10 @@ html{
 }
 .hed{
     width: 100%;
-    height: 400px;
-    background: linear-gradient(to bottom, rgb(137, 233, 220,0), var(--theme_color));
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--theme_color));
     position: absolute;
-    top: 0px;
+    top: 200px;
     z-index: 10;
 }
 .school-name{
@@ -80,13 +80,13 @@ html{
     margin: 0 auto 0 auto;
     font-size: 30px;
     position: relative;
-    top: 290px;
+    top: 90px;
     left: 10px;
-    color: #fff;
+    color: #000000;
 }
 .top-img{
     width: 100%;
-    height: 700px;
+    height: 100vh;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -142,7 +142,7 @@ html{
     max-width: 1200px;
     margin: 0 auto 0 auto;
     height: 100px;
-    color: #fff;
+    color: #000000;
     display: flex;
 }
 .school-name-inmanu{
@@ -163,10 +163,11 @@ html{
     margin: 0 auto 0 auto;
     padding: 0 -50px 0 20px;
     height: 80px;
-    color: #fff;
+    color: #000000;
     display: flex;
-    background-color: var(--theme_color);
     transform: translateY(-25px);
+    background-color: #ffffff9d;
+    box-shadow: #ffffffbf 0px 0px 40px 20px;
 }
 .stickyed > .school-name-inmanu{
     display: block;
@@ -179,7 +180,7 @@ html{
     width: calc(100% - 50px);
 }
 .opened-manu > a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     position: relative;
@@ -194,7 +195,6 @@ html{
     position: absolute;
     top: 400px;
     width: 100%;
-    background-color: #fff;
 }
 
 
@@ -214,7 +214,7 @@ html{
     color: #fff;
 }
 .sec-titele{
-    color: #fff;
+    color: #000000;
     width: fit-content;
     position: relative;
     top: 20px;
@@ -235,6 +235,7 @@ html{
     opacity: 0;
     transform: translateX(50px);
     transition: 500ms;
+    box-shadow: #0000001a 0px 0px 40px 8px, #00000012 7px 7px 14px 0px;
 }
 .bi-content-animated{
     opacity: 1;
@@ -276,7 +277,7 @@ html{
     width: 100%;
     max-width: 800px;
     height: 470px;
-    color: #fff;
+    color: #000000;
     margin: 0 auto 0 auto;
     text-align: center;
 }
@@ -286,13 +287,14 @@ html{
 }
 .features-content > h2{
     text-align: center;
+    color: #fff;
 }
 .features-content > h2::after {
-    content: "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　";
+    content: "　　　　　　　　　　　　　　　　　　　";
     background-color: #222222;
-    font-size: 12px;
+    font-size: 20px;
     position: relative;
-    left: -366px;
+    left: -368px;
     z-index: -1;
 }
 .fea-p{
@@ -354,6 +356,7 @@ html{
     transition: 600ms;
     opacity: 0;
     transform: translateX(50px);
+    box-shadow: #0000001a 0px 0px 40px 8px, #00000012 7px 7px 14px 0px;
 }
 .contact-animated > .contact-contents{
     opacity: 1;
@@ -404,6 +407,7 @@ html{
     transition: 600ms;
     opacity: 0;
     transform: translateX(50px);
+    box-shadow: #0000001a 0px 0px 40px 8px, #00000012 7px 7px 14px 0px;
 }
 .shop-animated > .shop-content{
     opacity: 1;
@@ -475,9 +479,9 @@ html{
 
 
 .footer{
-    height: 50px;
-    background-color: #222222;
+    height: 30px;
+    background-color: #ffffff00;
     text-align: center;
-    color: #929292;
+    color: #0000008e;
     padding: 50px;
 }
