@@ -5,7 +5,7 @@ $('#body').scroll(function() {
     if(scroll > 1100){
         sticky_element.classList.add('contact-animated');
     }
-    else{
+    if(scroll < 600){
         sticky_element.classList.remove('contact-animated');
     }
 });

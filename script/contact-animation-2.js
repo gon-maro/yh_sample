@@ -5,7 +5,7 @@ $('#body').scroll(function() {
     if(scroll > 1600){
         sticky_element.classList.add('shop-animated');
     }
-    else{
+    if(scroll < 1080){
         sticky_element.classList.remove('shop-animated');
     }
 });

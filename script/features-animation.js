@@ -5,7 +5,7 @@ $('#body').scroll(function() {
     if(scroll > 650){
         sticky_element.classList.add('features-animated');
     }
-    else{
+    if(scroll < 250){
         sticky_element.classList.remove('features-animated');
     }
 });
